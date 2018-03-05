@@ -30,7 +30,9 @@
         {
             this.panelMain = new System.Windows.Forms.Panel();
             this.tblMain = new System.Windows.Forms.TableLayoutPanel();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.panelMain.SuspendLayout();
+            this.tblMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMain
@@ -47,6 +49,7 @@
             this.tblMain.ColumnCount = 2;
             this.tblMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tblMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tblMain.Controls.Add(this.lblTitle, 0, 0);
             this.tblMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblMain.Location = new System.Drawing.Point(0, 0);
             this.tblMain.Name = "tblMain";
@@ -55,6 +58,15 @@
             this.tblMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tblMain.Size = new System.Drawing.Size(428, 340);
             this.tblMain.TabIndex = 0;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Location = new System.Drawing.Point(3, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(200, 26);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "this is test label to try a branched commit on command line";
             // 
             // Main
             // 
@@ -66,6 +78,8 @@
             this.Name = "Main";
             this.Text = "Main Form";
             this.panelMain.ResumeLayout(false);
+            this.tblMain.ResumeLayout(false);
+            this.tblMain.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -74,6 +88,7 @@
 
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.TableLayoutPanel tblMain;
+        private System.Windows.Forms.Label lblTitle;
     }
 }
 
